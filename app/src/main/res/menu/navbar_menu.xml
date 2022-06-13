@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Monitor"
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_dashboard"/>
+
+    <item android:title="Irigații"
+        android:id="@+id/pumpControlFragment"
+        android:icon="@drawable/ic_water_drop"/>
+
+    <item android:title="Aerisire"
+        android:id="@+id/ventilationProgramingFragment"
+        android:icon="@drawable/ic_ventilation"/>
+</menu>
