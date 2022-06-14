@@ -15,11 +15,6 @@ import android.widget.Button;
 import ro.ase.arduponic.Activities.MasterActivity;
 import ro.ase.arduponic.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NotConnectedFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class NotConnectedFragment extends Fragment {
 
     View view ;
@@ -45,7 +40,12 @@ public class NotConnectedFragment extends Fragment {
 //                intent.setComponent(cn);
 //                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //                startActivity( intent);
-                MasterActivity.IS_CONNECTED_TO_BLUETOOTH_DEVICE = true;
+               MasterActivity masterActivity = (MasterActivity) NotConnectedFragment.this.getActivity();
+               masterActivity.connect();
+               if(MasterActivity.IS_CONNECTED_TO_BLUETOOTH_DEVICE){
+                   MainFragment mainFragment = ((MainFragment) NotConnectedFragment.this.getParentFragment());
+                   mainFragment.showCorrectFragment();
+               }
             }
         });
         return view;

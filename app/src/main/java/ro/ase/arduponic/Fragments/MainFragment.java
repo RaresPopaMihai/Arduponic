@@ -25,7 +25,7 @@ public class MainFragment extends Fragment {
         return view;
     }
 
-    private void showCorrectFragment(){
+    public void showCorrectFragment(){
 
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
