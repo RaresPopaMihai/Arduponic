@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlVent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.VentilationProgramingFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvVent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Programare Aerisire"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvVentProgHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvVent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Aerisire Programată:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvVentProg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvVentProgHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/tvMinut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvVentProg"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Minut Inceput:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinVentMinut"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/tvMinut"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvMinut"
+        android:spinnerMode="dropdown"
+        android:fontFamily="@font/playfair_display_sc"/>
+
+    <TextView
+        android:id="@+id/tvDurata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMinut"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Durata(minute):"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinVentDurata"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvDurata"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvDurata"
+        android:fontFamily="@font/playfair_display_sc"
+        android:spinnerMode="dropdown"/>
+
+
+    <Button
+        android:id="@+id/btnProgram"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Programează Aerisirea"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltPA"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/spinVentMinut"
+        android:layout_marginBottom="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

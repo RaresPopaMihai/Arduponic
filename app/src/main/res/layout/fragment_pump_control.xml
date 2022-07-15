@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPumpC"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PumpControlFragment">
+
+
+    <TextView
+        android:id="@+id/tvControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Control Apă"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvValvaStanga"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvControl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Valvă Stânga"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvValvaCentru"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvValvaStanga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Valvă Centru"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvValvaDreapta"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvValvaStanga"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Valvă Dreapta"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/btnValvaStanga"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/tvValvaStanga"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Inchis"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <Button
+        android:id="@+id/btnValvaCentru"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/btnValvaStanga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Inchis"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <Button
+        android:id="@+id/btnValvaDreapta"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/btnValvaStanga"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:text="Inchis"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <TextView
+        android:id="@+id/tvPompaApa"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnValvaStanga"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Pompă Apă"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvPompaAer"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvPompaApa"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Pompă Aer"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnPompaApa"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/tvPompaApa"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Inchis"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <Button
+        android:id="@+id/btnPompaAer"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/btnPompaApa"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Inchis"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <Button
+        android:id="@+id/btnManual"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnExecute"
+        android:layout_marginBottom="0dp"
+        android:text="Execută și Pornește Modul Manual"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <Button
+        android:id="@+id/btnExecute"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Executa"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/playfair_display_sc"
+        android:background="@drawable/custom_button"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltPL"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnManual"
+        android:layout_marginBottom="1dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

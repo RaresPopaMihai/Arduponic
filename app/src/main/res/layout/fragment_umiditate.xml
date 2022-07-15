@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlUmd"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UmiditateFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvUmdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display_sc"
+        android:shadowColor="@android:color/black"
+        android:text="Control Umiditate"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+    <LinearLayout
+        android:id="@+id/llInitUmdt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/tvUmdt"
+        android:layout_marginTop="40dp"
+        android:layout_above="@+id/btnModify">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Planta Stângă"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvSMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPS"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Minimum"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tvSMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPS"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Maximum"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/etSMin"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSMin"
+                android:layout_alignStart="@id/tvSMin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:inputType="number"
+                android:fontFamily="@font/playfair_display_sc"/>
+            <EditText
+                android:id="@+id/etSMax"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSMax"
+                android:layout_alignStart="@id/tvSMax"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:fontFamily="@font/playfair_display_sc"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Planta Centru"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvCMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPC"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Minimum"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tvCMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPC"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Maximum"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/etCMin"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCMin"
+                android:layout_alignStart="@id/tvCMin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:inputType="number"
+                android:fontFamily="@font/playfair_display_sc"/>
+
+            <EditText
+                android:id="@+id/etCMax"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCMax"
+                android:layout_alignStart="@id/tvCMax"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:inputType="number"
+                android:fontFamily="@font/playfair_display_sc"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Planta Dreapta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPD"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Minimum"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tvDMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPD"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display_sc"
+                android:shadowColor="@android:color/black"
+                android:text="Maximum"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/etDMin"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDMin"
+                android:layout_alignStart="@id/tvDMin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:inputType="number"
+                android:fontFamily="@font/playfair_display_sc"/>
+            <EditText
+                android:id="@+id/etDMax"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDMax"
+                android:layout_alignStart="@id/tvDMax"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:fontFamily="@font/playfair_display_sc"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/playfair_display_sc"
+        android:text="Modifică Umiditate"
+        android:textColor="@color/colorPrimary" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltUL"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnModify"
+        android:layout_marginBottom="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
